@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/infoback"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/applogo"/>
+    
+    <TextView
+        android:layout_marginTop="88dp"
+        android:gravity="left"
+        android:layout_marginLeft="18dp"
+        android:text="Open-Weather(v.1.0)"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:layout_width="1000dp"
+        android:layout_height="75dp" />
+
+    <TextView
+        android:id="@+id/aboutpara"
+        android:layout_width="1080dp"
+        android:textSize="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="18dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="Open-Weather is a revolutionary weather app designed to provide users with accurate and up-to-date weather information for their location. With this app, users can easily stay informed about the current weather conditions, forecast, and other relevant weather-related data.The app is designed with a user-friendly interface, making it easy for anyone to use. It offers real-time weather updates that are constantly updated, ensuring that users always have the most accurate information at their fingertips. Whether you want to know the temperature, humidity, wind speed, or any other weather-related data, Open-Weather has got you covered."/>
+
+    <TextView
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="18dp"
+        android:text="Links:"
+        android:textColor="#fff"
+        android:gravity="left"
+        android:textSize="40dp"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        />
+
+    <TextView
+        android:id="@+id/GithubProfile"
+        android:layout_width="500dp"
+        android:textSize="29dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="18dp"
+        android:text="Creator Github"
+        android:textColor="#1aa7ec"
+        android:layout_marginTop="580dp"
+        android:textStyle="bold"
+        android:clickable="true" />
+
+    <TextView
+    android:id="@+id/RepoLink"
+    android:layout_width="500dp"
+    android:textSize="29dp"
+    android:layout_height="48dp"
+    android:layout_marginLeft="18dp"
+    android:text="Github Repo"
+    android:textColor="#1aa7ec"
+    android:layout_marginTop="620dp"
+    android:textStyle="bold"
+    android:clickable="true" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="30dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="A Sanjeev.K Project"
+        android:layout_marginTop="688dp"/>
+
+
+
+
+</RelativeLayout>

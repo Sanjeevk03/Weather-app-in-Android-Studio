@@ -4,19 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/mainactivitybackground"
     tools:context=".MainActivity">
 
 
 
 
     <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:layout_width="500dp"
+        android:layout_height="378dp"
         android:id="@+id/weatherIcon"
         android:src="@drawable/finding">
 
     </pl.droidsonroids.gif.GifImageView>
+
+    <Button
+        android:text="About"
+        android:textColor="#000"
+        android:id="@+id/InfoButton"
+        android:paddingRight="8dp"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="330dp">
+
+    </Button>
 
 
     <LinearLayout
@@ -70,6 +84,8 @@
     </LinearLayout>
 
 
+
+
     <RelativeLayout
         android:id="@+id/cityFinder"
         android:layout_width="match_parent"
@@ -78,7 +94,7 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/buttondesign">
 
         <TextView

@@ -13,6 +13,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -28,6 +29,8 @@ import cz.msebera.android.httpclient.Header;
 import pl.droidsonroids.gif.GifImageView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button button;
 
 
     final String APP_ID = "dab3af44de7d24ae7ff86549334e45bd";
@@ -61,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
         mweatherIcon = findViewById(R.id.weatherIcon);
         mCityFinder = findViewById(R.id.cityFinder);
         NameofCity = findViewById(R.id.cityName);
+        button = findViewById(R.id.InfoButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInfoActivity();
+            }
+        });
 
 
         mCityFinder.setOnClickListener(new View.OnClickListener() {
@@ -233,5 +243,10 @@ public class MainActivity extends AppCompatActivity {
         {
             mLocationManager.removeUpdates(mLocationListner);
         }
+    }
+
+    public void openInfoActivity() {
+        Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
     }
 }

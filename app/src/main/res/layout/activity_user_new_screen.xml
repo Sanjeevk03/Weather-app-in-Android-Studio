@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#4169e1"
+    android:layout_height="match_parent"
+    tools:context=".UserNewScreen">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompact"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/newuseractivity_bgheader"
+        android:layout_height="380dp">
+        
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="264dp"
+            android:layout_height="284dp"
+            android:src="@drawable/applogo"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Open-Weather v.1.0"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="37dp"
+            android:layout_width="400dp"
+            android:layout_height="56dp" />
+        
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="450dp"
+        android:layout_width="1000dp"
+        android:layout_height="48dp"
+        android:text="Open-Weather" />
+
+    <TextView
+        android:textColor="#ABE0D5"
+        android:lineSpacingExtra="0dp"
+        android:layout_marginTop="520dp"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:layout_width="500dp"
+        android:layout_height="75dp"
+        android:text="A weather app to suit all your needs" />
+
+
+
+
+        <Button
+        android:id="@+id/button"
+        android:layout_marginTop="630dp"
+        android:layout_width="300dp"
+        android:backgroundTint="@color/button_bck_newuser"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginLeft="52dp"
+        android:textSize="25dp"
+        android:layout_height="55dp"
+        android:text="Continue to app"/>
+
+</RelativeLayout>
