@@ -28,7 +28,7 @@ public class InfoActivity extends AppCompatActivity {
         linkTextView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLink("");
+                openLink("https://github.com/Sanjeevk03/Weather-app-in-Android-Studio");
             }
         });
     }
